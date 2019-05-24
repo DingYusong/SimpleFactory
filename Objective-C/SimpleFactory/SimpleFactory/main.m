@@ -65,6 +65,8 @@ int main(int argc, const char * argv[]) {
 //        CGFloat result = operate.GetResult;
 //        NSLog(@"%.2f",result);
 
+        //工厂类可以产生多种不同的产品类。这才叫工厂模式。第三种是直接自己使用里式替换，继承和多肽完成的。不能叫工厂m模式。
+        
         //第四种：简单工厂模式。新增一种算法的话，除了增加一个Operate子类外还要修改OperateFactory工厂类，这不符合开放关闭原则。
         OperateBase *operate = [OperateFactory createOperate:@"+"];
         operate.numberA = 1;
